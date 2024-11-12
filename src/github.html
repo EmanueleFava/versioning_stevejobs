@@ -3,14 +3,200 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>GITHUB</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   </head>
   <body>
     <nav></nav>
-    <h1>Argomento</h1>
-    <p></p>
+    <h1>GITHUB</h1>
+    <p>
+      <h2>GitHub: Funzionalità e Gestione dei Progetti</h2>  
+
+      <p><strong>GitHub </strong> è una piattaforma di hosting per repository Git che supporta la collaborazione tra sviluppatori. Fornisce strumenti utili per lavorare su progetti, tracciarne le versioni e organizzare il lavoro in team.</p>
+      <h2>Repository e Organizzazione dei File</h2> 
+      <ul>
+      <li> <strong>Repository</strong> : Contenitore del progetto dove vengono salvati i file e le cronologie delle modifiche.</li>  
+
+      <li> <strong>Branch</strong> : I branch permettono di sviluppare nuove funzionalità senza interferire con il codice principale (tipicamente il branch `main` o `master`). </li>  
+
+      <li> <strong>README.md</strong> : File Markdown di descrizione del progetto visualizzato nella pagina principale del repository; ottimo per includere una panoramica, istruzioni e documentazione di base. </li> 
+
+      <li><strong>LICENSE</strong>: File che specifica le condizioni di licenza del codice. </li>
+
+      <li><strong>.gitignore</strong>:  File che definisce quali file o cartelle escludere dal repository (ad es., dati sensibili o file di sistema). </li> 
+      </ul>
+      
+      
+      <h2>Strumenti per la Collaborazione </h2> 
+      <ul>
+      <li><strong>Fork</strong>: Copia di un repository nel proprio account GitHub, usata spesso per contribuire a progetti open source. È possibile fare modifiche nel fork e poi proporre l’integrazione nel repository originale tramite una pull request. </li>
+
+      <li><strong>Pull Request</strong>: Richiesta per unire il codice da un branch a un altro (spesso da una copia fork al repository originale). Le pull request consentono di discutere le modifiche, ottenere feedback e fare revisioni prima dell’integrazione. </li> 
+
+      <li><strong>Actions</strong> : Strumento per configurare e automatizzare workflow come Continuous Integration (CI) e Continuous Deployment (CD). Con le Actions, è possibile automatizzare test, build e distribuzione del codice. </li> 
+      </ul>
+      
+      
+      <h2>Gestione delle Attività con Issues e Projects </h2>
+      <ul>
+        <li><strong>Issues</strong>: Segnalazioni usate per tracciare bug, miglioramenti e nuove funzionalità. Ogni issue può avere una descrizione, assegnatari, label e milestone per organizzarla al meglio. </li> 
+
+      <li><strong>Labels</strong>: Etichette che categorizzano le issues (ad esempio, `bug`, `enhancement`, `help wanted`) per migliorarne la visibilità e priorità. </li>
+
+      <li><strong>Milestones</strong>: Obiettivi con una scadenza per un gruppo di issues; molto utili per pianificare rilasci. </li>
+    
+      <li><strong>Projects </strong>: Strumenti di gestione visiva delle task che funzionano come un kanban board (con colonne `Backlog`, `To Do`, `In Progress`, ecc.). Utili per coordinare il lavoro di team e tenere traccia dello stato di avanzamento. </li>
+      </ul>
+      
+      <h2>Gestione del Codice e Revisione </h2>
+      <ul>
+      <li><strong> Code Review</strong>: Strumento di GitHub per controllare il codice proposto nelle pull request. È possibile lasciare commenti, richiedere modifiche o approvare le modifiche proposte da altri collaboratori. </li>
+
+      <li><strong>Protezione dei Branch </strong>: Impostazione che richiede il completamento di determinate condizioni prima che un branch possa essere modificato (ad es., approvazione delle pull request, superamento dei test automatizzati). </li> 
+
+      <li> <strong> Template per Issues e Pull Requests</strong>: Modelli preimpostati per creare issues e pull request, aiutano a mantenere un formato uniforme e una comunicazione chiara. Si creano file `.md` in una cartella chiamata `.github`. </li>
+      </ul>
+      <h4><strong>Versionamento e Rilasci</strong></h4>
+
+<ul>
+  <li><strong>Tagging e Releases</strong> - I tag permettono di “bloccare” un particolare commit con un nome specifico (ad es., <code>v1.0.0</code>). Con i tag, si possono creare “releases” per segnare versioni stabili del progetto, con allegati (es. binari, pacchetti) e note di rilascio.</li>
+  <li><strong>Semantic Versioning (SemVer)</strong> - Standard di versionamento usato per indicare il tipo di cambiamento in una versione (<code>major.minor.patch</code>).</li>
+</ul>
+
+<h3><strong>Comunicazione e Documentazione</strong></h3>
+
+<ul>
+  <li><strong>Wiki</strong> - Ogni repository ha una sezione Wiki per creare una documentazione più estesa e strutturata rispetto al README.</li>
+  <li><strong>GitHub Discussions</strong> - Strumento per gestire conversazioni e discussioni più informali all'interno del repository, spesso utilizzato per richieste di funzionalità, domande generali o brainstorming.</li>
+  <li><strong>GitHub Pages</strong> - Servizio di hosting per pubblicare pagine web direttamente da un repository GitHub. Utile per creare documentazione o siti web per progetti open source.</li>
+</ul>
+
+<h3><strong>GitHub e le Piattaforme Cloud</strong></h3>
+
+<p>GitHub è spesso utilizzato in combinazione con piattaforme cloud come:</p>
+
+<ul>
+  <li><strong>GitHub Actions</strong> - Permette di automatizzare il deploy su cloud come <strong>AWS</strong>, <strong>Azure</strong> e <strong>Google Cloud</strong>.</li>
+  <li><strong>Integrazione CI/CD</strong> - Con GitHub Actions, puoi configurare flussi di lavoro per test e deploy automatici, collegando GitHub al cloud provider che preferisci.</li>
+</ul>
+
+<h3><strong>Best Practices per GitHub</strong></h3>
+
+<ol>
+  <li><strong>Usa i Branch per lo Sviluppo</strong>: Crea branch separati per le nuove funzionalità e per risolvere i bug.</li>
+  <li><strong>Scrivi Commit e Pull Request Chiari</strong>: Usa messaggi chiari e dettagliati per spiegare le modifiche.</li>
+  <li><strong>Crea Issues per Ogni Task</strong>: Traccia ogni lavoro come issue e aggiorna il loro stato per favorire la trasparenza.</li>
+  <li><strong>Configura le Pull Request con Revisioni e Approvi</strong>: Usa le review per controllare la qualità del codice.</li>
+  <li><strong>Usa le GitHub Actions per Automatizzare i Test</strong>: Automatizza i test per rilevare rapidamente problemi nel codice.</li>
+  <li><strong>Aggiorna la Documentazione</strong>: Mantieni README, Wiki e altre documentazioni allineate allo stato del progetto.</li>
+</ol>
+
+<hr>
+
+<p>GitHub fornisce strumenti potenti per gestire il ciclo di vita del progetto, automatizzare workflow e collaborare efficacemente in team. Utilizzare questi strumenti consente una gestione del codice più ordinata, una comunicazione fluida e un’integrazione continua.</p>
+
+<hr>
+
+<h3><strong>1. Repository e Gestione dei File su GitHub</strong></h3>
+
+<h4><strong>Creazione e Struttura di un Repository</strong></h4>
+
+<ul>
+  <li><strong>Repository pubblico vs. privato</strong>: Puoi creare repository pubblici (visibili a tutti) o privati (accessibili solo a te e agli utenti autorizzati). I repository privati sono utili per progetti interni o in fase di sviluppo.</li>
+  <li><strong>Template repository</strong>: Puoi usare un repository come modello per crearne altri con la stessa struttura, molto utile per progetti che richiedono configurazioni simili.</li>
+</ul>
+
+<h4><strong>.gitignore</strong></h4>
+
+<ul>
+  <li><strong>File .gitignore</strong>: File che indica a Git quali file o cartelle ignorare. È particolarmente utile per escludere file di sistema, dati sensibili o file di configurazione locale.</li>
+</ul>
+
+<h4><strong>Branches e Workflows</strong></h4>
+
+<ul>
+  <li><strong>Branches per Ambienti di Lavoro</strong>: Oltre ai branch di sviluppo (<code>develop</code>) e al branch principale (<code>main</code> o <code>master</code>), è possibile creare branch per ambienti specifici come <code>staging</code> e <code>production</code>, per differenziare il codice in base al livello di maturità.</li>
+  <li><strong>Branch Protection Rules</strong>: Le regole di protezione dei branch ti permettono di configurare restrizioni (es. approvazioni multiple, check CI superati) per garantire che solo il codice di qualità venga unito al branch protetto (di solito <code>main</code> o <code>master</code>).</li>
+</ul>
+
+<h3><strong>2. Strumenti di Collaborazione GitHub</strong></h3>
+
+<h4><strong>Forking e Contributi</strong></h4>
+
+<ul>
+  <li><strong>Fork</strong>: Una copia di un repository che puoi modificare liberamente. Utilizzata per contribuire a progetti open source, specialmente quando non si ha accesso in scrittura al repository originale.</li>
+  <li><strong>Contributing Guidelines</strong>: Puoi aggiungere un file <code>CONTRIBUTING.md</code> nel repository, con le linee guida per chi desidera contribuire. Questo file aiuta a standardizzare il processo di contribuzione, spiegando come fare le pull request e segnalare i problemi.</li>
+</ul>
+
+<h4><strong>Code Owners</strong></h4>
+
+<ul>
+  <li><strong>CODEOWNERS</strong>: Un file speciale che assegna automaticamente revisori a determinate parti del codice. Ad esempio, i membri responsabili di una specifica area del progetto (come il frontend o il backend) vengono notificati automaticamente quando vengono proposte modifiche a quella parte di codice.</li>
+</ul>
+
+<h4><strong>GitHub Discussions e Community Engagement</strong></h4>
+
+<ul>
+  <li><strong>Discussions</strong>: Uno spazio per comunicazioni informali all'interno del repository. È ideale per domande aperte, brainstorming e interazioni non legate a problemi specifici.</li>
+  <li><strong>Sponsor e Donazioni</strong>: Con GitHub Sponsors, sviluppatori e team open source possono ricevere donazioni per sostenere i loro progetti, creando una fonte di finanziamento per il lavoro di sviluppo gratuito.</li>
+</ul>
+
+<h3><strong>3. Issues, Labels e Milestone: Gestione delle Attività</strong></h3>
+
+<h4><strong>Issues</strong></h4>
+
+<ul>
+  <li><strong>Creazione e Organizzazione</strong>: Le issues sono segnalazioni utilizzate per registrare problemi, richieste di miglioramento o attività specifiche. Ogni issue ha un titolo, una descrizione, assegnatari e può avere delle <strong>label</strong>.</li>
+  <li><strong>Link alle Pull Request</strong>: È possibile collegare un issue a una pull request specifica. Una volta che la pull request è chiusa, l’issue viene automaticamente chiusa se viene usato un termine come "Fixes #numero_issue".</li>
+</ul>
+
+<h4><strong>Labels</strong></h4>
+
+<ul>
+  <li><strong>Tipologie di Labels</strong>: GitHub fornisce alcune etichette di base (<code>bug</code>, <code>enhancement</code>, <code>help wanted</code>), ma è possibile creare etichette personalizzate per gestire meglio le priorità (<code>high-priority</code>, <code>low-priority</code>), le aree di lavoro (<code>frontend</code>, <code>backend</code>) o lo stato (<code>in-progress</code>, <code>blocked</code>).</li>
+</ul>
+
+<h4><strong>Milestones</strong></h4>
+
+<ul>
+  <li><strong>Creazione di Milestones</strong>: Le milestone raggruppano issues che contribuiscono a un obiettivo più ampio, come un rilascio o una fase del progetto. Ogni milestone può avere una scadenza e uno stato di avanzamento basato su quante issues sono state chiuse.</li>
+</ul>
+
+<h3><strong>4. Pull Requests (PR) e Code Review</strong></h3>
+
+<h4><strong>Creazione di Pull Requests</strong></h4>
+
+<ul>
+  <li><strong>Comparazione e Revisione</strong>: Quando crei una pull request, puoi confrontare le differenze tra branch, visualizzando le modifiche per file e linea di codice.</li>
+  <li><strong>Draft Pull Requests</strong>: Puoi iniziare una pull request in modalità bozza, consentendo ai revisori di commentare prima che la pull request sia pronta per essere unita.</li>
+</ul>
+
+<h4><strong>Code Review e Approvals</strong></h4>
+
+<ul>
+  <li><strong>Review dei Codici</strong>: Durante la code review, i membri del team esaminano le modifiche per assicurarsi che siano coerenti con gli standard del progetto, funzionino correttamente e non introducano bug. Ogni membro del team può aggiungere commenti o suggerire modifiche.</li>
+  <li><strong>Approvals</strong>: Le pull request vengono approvate solo quando i revisori sono soddisfatti delle modifiche. Il processo di approvazione può essere configurato per richiedere più approvazioni prima che la pull request venga unita.</li>
+</ul>
+
+<h3><strong>5. GitHub Actions: Automazione e CI/CD</strong></h3>
+
+<h4><strong>GitHub Actions</strong></h4>
+
+<ul>
+  <li><strong>Automazione</strong>: GitHub Actions consente di creare flussi di lavoro per automatizzare attività come test, build e deployment.</li>
+  <li><strong>CI/CD</strong>: Le azioni possono essere configurate per eseguire il Continuous Integration (CI) e Continuous Delivery (CD), garantendo che il codice venga automaticamente testato e distribuito quando viene modificato.</li>
+</ul>
+
+<h4><strong>Esempi di Workflow</strong></h4>
+
+<ul>
+  <li><strong>Test Automatizzati</strong>: Un workflow può essere configurato per eseguire una suite di test ogni volta che un codice viene inviato al repository.</li>
+  <li><strong>Deploy su Cloud</strong>: Un altro workflow può automatizzare il deploy di una nuova versione del progetto su piattaforme cloud come <strong>AWS</strong> o <strong>Heroku</strong>.</li>
+</ul>
+
+      
+    </p>
     <script src="main.js"></script>
   </body>
 </html>
