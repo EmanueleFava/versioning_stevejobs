@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(77, 77, 89);
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #a7b9c4;
+  margin: auto;
+  padding: 3vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  font-size: 14px;
+  margin: 1vh;
+  text-decoration: none;
+  color: #2f2f2f;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  /*
+    nell'after viene inserito l'elemento che poi
+    si vuole nascondere, per poi visualzizarlo
+    nell'hover::after 
+
+    */
+  content: "";
+  height: 3px;
+  width: 0%; /* qui viene inserita la larghezza 
+  dell'elemento linea */
+  opacity: 0; /*opacità 0 per renderla invisibile*/
+  background: #2f2f2f;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.9s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.navbar ul li:hover a {
+  color: #51ffa2;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container h1:hover {
+  color: #51ffa2;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.container li {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.container li a:hover {
+  color: #51ffa2;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+}
