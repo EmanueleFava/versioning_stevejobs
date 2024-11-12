@@ -1,5 +1,5 @@
 ##Link alla homepage -> https://emanuelefava.github.io/versioning_stevejobs/
-# GIT&GITHUB documantation
+# GIT&GITHUB documentation
 Questa repository è dedicata alla documentazione del software Git e della piattaforma Github.
 
 Mappa della treefolder html: 
