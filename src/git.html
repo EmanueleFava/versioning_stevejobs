@@ -3,14 +3,159 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>GIT DOCUMENTATION</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
   </head>
   <body>
-    <nav></nav>
-    <h1>Argomento</h1>
-    <p></p>
+    <h1>GIT</h1>
+    <h2>Introduzione</h2>
+    <p>
+      <b>Git</b> è un sistema di
+      <i>controllo di versione distribuito, o "versioning" ,</i> che consente
+      agli sviluppatori di tenere traccia delle modifiche apportate al codice
+      sorgente nel tempo. Git è progettato per gestire progetti di sviluppo
+      software in modo efficiente, permettendo a più persone di lavorare
+      contemporaneamente senza conflitti. La sua principale funzione è quella di
+      <b>registrare ogni modifica al codice</b>, consentendo di
+      <b>tornare "indietro nel tempo", ovvero a versioni precedenti</b> se
+      necessario e facilitando la collaborazione tra team.
+    </p>
+
+    <h2>Caratteristiche e Utilizzo di Git</h2>
+    <p>
+      <ul>
+        <li><b>Versionamento</b>: Git tiene una cronologia dettagliata delle modifiche, permettendo agli sviluppatori di sapere chi ha fatto cosa e quando. 
+          Questo è fondamentale per gestire progetti complessi dove più sviluppatori possono apportare modifiche simultaneamente. </li>
+        <li><b>Collaborazione</b>: Grazie a Git, diversi membri di un team possono lavorare su rami separati del progetto (chiamati branch) 
+          e successivamente unire le loro modifiche nel codice principale. Questo processo aiuta a evitare conflitti e a mantenere il codice organizzato. </li>
+        <li><b>Backup e Ripristino</b>: Ogni copia di un repository Git è un backup completo, il che significa che in caso di problemi, 
+          gli sviluppatori possono facilmente ripristinare versioni precedenti del codice. </li>
+        <li><b>Strumenti Avanzati</b>: Git offre funzionalità come il branching e il merging, che permettono di testare nuove idee senza influenzare il codice stabile. 
+          Le modifiche vengono registrate attraverso operazioni chiamate commit, ognuna delle quali rappresenta uno stato specifico del progetto. </li>
+      </ul>
+    </p>
+
+    <h2>Guida al primo utilizzo di Git</h2>
+    <h3>Download software Git</h3>
+    <p>La prima cosa da fare è scaricare ed installare Git dal sito originale : <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+
+    <h3>Creazione di una Repository Locale</h3>
+    <p>Per iniziare a utilizzare Git in un progetto, il primo passo è <strong>creare una repository locale</strong>. Questo processo è semplice e può essere realizzato seguendo questi passaggi:</p>
+    <ol>
+        <li><strong>Creare una Nuova Cartella</strong>: Crea una nuova directory per il tuo progetto.</li>
+        <li><strong>Accedere alla Cartella</strong>: Apri il terminale e naviga nella directory appena creata.</li>
+        <li><strong>Inizializzare la Repository</strong>: Esegui il comando:
+            <pre><code>git init</code></pre>
+            Questo comando crea una sottodirectory <code>.git</code>, che contiene tutti i file necessari per la gestione della repository.
+        </li>
+        <li><strong>Aggiungere File</strong>: Aggiungi i file al tuo progetto utilizzando:
+            <pre><code>git add &lt;nome_file&gt;</code></pre>
+        </li>
+        <li><strong>Commettere le Modifiche</strong>: Effettua il primo commit con:
+            <pre><code>git commit -m "Primo commit"</code></pre>
+        </li>
+    </ol>
+    <p>Se stai lavorando su un progetto esistente, puoi semplicemente navigare nella cartella del progetto e ripetere i passaggi 3-5.</p>
+
+    <h3>Creazione di una Repository Online su GitHub</h3>
+    <p>Dopo aver creato una repository locale, puoi anche <strong>pubblicarla online su GitHub</strong> per condividerla e collaborare con altri. Ecco come fare:</p>
+    <ol>
+        <li><strong>Accedi a GitHub</strong>: Vai su GitHub e accedi al tuo account.</li>
+        <li><strong>Creare una Nuova Repository</strong>: Clicca sul pulsante "New" in alto a destra.</li>
+        <li><strong>Compilare i Dettagli della Repository</strong>:
+            <ul>
+                <li>Assegna un nome alla tua repository.</li>
+                <li>Aggiungi una descrizione (opzionale).</li>
+                <li>Scegli la visibilità (pubblica o privata).</li>
+                <li>Poi puoi anche decidere di inizializzarla con un file README o un file <code>.gitignore</code>.</li>
+            </ul>
+        </li>
+        <li><strong>Creare la Repository</strong>: Clicca su "Create repository".</li>
+    </ol>
+
+    <h3>Collegamento della Repository Locale a GitHub</h3>
+    <p>Una volta creata la repository online, puoi collegarla alla tua repository locale:</p>
+    <ol>
+        <li><strong>Imposta l'URL Remoto</strong>:
+            <pre><code>git remote add origin https://github.com/username/nome_repository.git</code></pre>
+        </li>
+        <li><strong>Pubblica le Modifiche</strong>:
+            <pre><code>git push -u origin master</code></pre>
+        </li>
+    </ol>
+
+    <p>Questi passaggi ti permetteranno di avere una repository locale sincronizzata con quella online, facilitando la collaborazione e la gestione del codice sorgente.</p>
+
+    <h2>Comandi Git</h2>
+
+    <h3>Merge Commit</h3>
+    <p><strong>Definizione</strong>: Un <em>merge commit</em> è un tipo di commit che viene creato quando si uniscono due branch. Esso include i commit precedenti all'apice della cronologia e aggiunge un ulteriore commit che rappresenta l'unione.</p>
+
+    <h3>Squash Commit</h3>
+    <p><strong>Definizione</strong>: Con il <em>squash commit</em>, i commit vengono uniti, ma non viene creato un ulteriore commit come nel caso del merge. Questo metodo è utile per mantenere una cronologia più pulita.</p>
+
+    <h3>Git Rebase</h3>
+    <p><strong>Funzione</strong>: Il comando <code>git rebase</code> concatena i nuovi commit e li inserisce sempre alla cima della cronologia. A differenza del merge, il rebase cambia la storia dei commit, rendendo la cronologia lineare.</p>
+
+    <h3>Comandi Fondamentali</h3>
+    <ul>
+        <li><strong>Switching Branch:</strong>
+            <ul>
+                <li><code>git switch main</code>: Torna al branch principale.</li>
+                <li><code>git merge nomebranch</code>: Unisce il branch specificato nel branch principale.</li>
+            </ul>
+        </li>
+
+        <li><strong>Visualizzazione Differenze:</strong>
+            <ul>
+                <li><code>git diff nomefile</code>: Mostra le modifiche apportate a un file.</li>
+                <li><code>git diff &lt;ascii_commit&gt;</code>: Mostra le differenze rispetto a un commit specifico.</li>
+            </ul>
+        </li>
+
+    <h3>Rebase Interattivo</h3>
+    <p><strong>Comando:</strong></p>
+    <pre><code>git rebase -i &lt;commit_ascii&gt;</code></pre>
+
+    <p>A avviare una sessione di rebase interattivo, dove si possono modificare i commit.</p>
+
+    <p><strong>Comandi Utilizzabili:</strong></p>
+    <ul>
+        <li><code>pick</code>: Mantiene il commit.</li>
+        <li><code>squash</code>: Unisce il commit con quello precedente.</li>
+        <li><code>fixup</code>: Simile a squash, ma non permette di modificare il messaggio del commit.</li>
+        <li><code>reword</code>: Cambia il messaggio del commit.</li>
+    </ul>
+
+    <h3>Modifica dell'Ultimo Commit</h3>
+    <p><strong>Comando:</strong></p>
+
+    <pre><code>git commit --amend</code></pre>
+
+    <p>Aggiunge il commit più recente al precedente, permettendo di cambiare il messaggio.</p>
+
+    <pre><code>&#x2014;no-edit&#x2014;</code></pre>
+
+    <p>Mantiene il titolo del commit senza modificarlo.</p>
+
+    <h3>Cherypick</h3>
+
+    <p><strong>Funzione:</strong></p>
+
+    <pUtilizzato per prendere un commit specifico da un branch e spostarlo in un altro (ad esempio nel main) con il comando:</p>
+
+    <pre><code>git cherry-pick &lt;ascii_commit&gt;</code></pre>
+
+    <h3>Stashing delle Modifiche</h3>
+
+    <p><strong>Comandi:</strong></p>
+
+    <ul>
+        <li><code>git stash</code>: Mettere da parte le modifiche correnti.</li>
+        <li><code>git stash apply</code>: Riapplica le modifiche stashed.</li>
+        <li><code>git stash push -m &lt;nome&gt;</code>: Rinomina uno stash.</li>
+        <li><code>git stash list</code>: Mostra la lista degli stash.</li></ul>
 
     <script src="main.js"></script>
   </body>
